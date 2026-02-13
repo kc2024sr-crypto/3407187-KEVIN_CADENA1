@@ -56,7 +56,9 @@ const toastMessage = document.getElementById('toastMessage');
 // ============================================
 
 const renderBasicInfo = () => {
-  const { name, title, description, location, contact: { email, phone } } = entityData;
+  const { name, title, description, location, contact } = entityData;
+  const email = contact?.email ?? 'No especificado';
+  const phone = contact?.phone ?? 'N/A';
 
   userName.textContent = name;
   userTitle.textContent = title;
@@ -164,7 +166,8 @@ const loadTheme = () => {
 // ============================================
 
 const copyInfo = () => {
-  const { name, contact: { email } } = entityData;
+  const { name, contact } = entityData;
+  const email = contact?.email ?? 'sin correo';
   const infoText = `${name}\nContacto: ${email}`;
 
   navigator.clipboard.writeText(infoText);
