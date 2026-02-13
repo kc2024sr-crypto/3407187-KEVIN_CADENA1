@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Orgánica - NaturalOrganic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Business Card -->
+    <div class="card" id="businessCard">
+      <!-- Header Section -->
+      <div class="card-header">
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=400&fit=crop" alt="Organic Store - Colorful Fruits and Vegetables" id="avatarImg">
+        </div>
+        <div class="header-info">
+          <h1 id="userName">Loading...</h1>
+          <p class="title" id="userTitle">Loading...</p>
+          <p class="location" id="userLocation">📍 Loading...</p>
+        </div>
+      </div>
+
+      <!-- Sección Sobre la Tienda -->
+      <div class="card-section">
+        <h2>Sobre la Tienda</h2>
+        <p id="userBio" class="bio">Cargando...</p>
+      </div>
+
+      <!-- Sección de Contacto -->
+      <div class="card-section">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon">📧</span>
+            <span id="userEmail">Cargando...</span>
+            <button id="copyEmailBtn" class="btn btn-small">Copiar</button>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <span id="userPhone">Cargando...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de Productos -->
+      <div class="card-section">
+        <h2>Productos</h2>
+        <div id="productsList" class="products-list">
+          Cargando...
+        </div>
+        <button id="toggleProducts" class="btn btn-secondary">Mostrar más</button>
+      </div>
+
+      <!-- Sección de Redes Sociales -->
+      <div class="card-section">
+        <h2>Redes Sociales</h2>
+        <div id="socialLinks" class="social-links">
+          Cargando...
+        </div>
+      </div>
+
+      <!-- Sección de Estadísticas -->
+      <div class="card-section">
+        <h2>Estadísticas</h2>
+        <div id="stats" class="stats-grid">
+          Cargando...
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <p>Hecho con ❤️ usando JavaScript ES2023</p>
+      <p class="small">Proyecto Semana 01 - Ficha de Información Interactiva</p>
+    </footer>
+  </div>
+
+  <!-- Notificación Toast -->
+  <div id="toast" class="toast">
+    <span id="toastMessage"></span>
+  </div>
+
+  <script src="starter/script.js"></script>
+</body>
+</html>
